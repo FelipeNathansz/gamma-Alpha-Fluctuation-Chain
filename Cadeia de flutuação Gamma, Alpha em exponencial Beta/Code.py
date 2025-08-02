@@ -8,7 +8,7 @@ mu = 0.5
 t = 1.0
 delta = 0.8
 
-# Construção da Hamiltoniana
+
 H = np.zeros((2 * N, 2 * N), dtype=float)
 for i in range(N - 1):
     H[2*i, 2*(i+1)] = -t
@@ -47,3 +47,4 @@ ax.view_init(elev=30, azim=225)
 
 plt.tight_layout()
 plt.show()
+
